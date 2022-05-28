@@ -9,8 +9,13 @@ We have to give **Beans** and **Config** to the Spring container.
 **ApplicationContext** interface represents our Spring Container. It extends **BeanFactory.**
 
 ```Subclass of ApplicationContext are```
-- **ClasspathXMLApplicationContext** - search for xml configuration file from java class path
-- **AnnotationConfigApplicationContext** 
-- **FileSystemXMLApplicationContext**
+- ClasspathXMLApplicationContext - search for xml configuration file from java class path
+- AnnotationConfigApplicationContext 
+- FileSystemXMLApplicationContext
 
+#### Dependency injection can be done in two ways:
+1. Setter injection - sometimes called Property injection also
+2. Constructor injection
 
+> the class which we provide to IoC containers are called **Beans**. We use xml **configuration file** to give those information of our class.
+- configuration file - where we declare beans and its dependency
