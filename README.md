@@ -26,3 +26,6 @@ Spring provides two important methods to every **bean**.
 2. public void destroy()
 
 **AbstractApplicationContext** has **registerShutdownHook()** method for destroying application context
+
+**<<context:annotation-config>>** inside xml config file will enable all the annotations in spring context
+
