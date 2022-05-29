@@ -29,3 +29,17 @@ Spring provides two important methods to every **bean**.
 
 **<<context:annotation-config>>** inside xml config file will enable all the annotations in spring context
 
+## Autowiring in Spring
+- feature of Spring framework in which Spring container injects the Spring dependencies automatically.
+- Autowiring can't be used for primitive and String data types. It works with reference types only.
+- two ways of autowiring - **XML and Annotations**
+
+### XML autowiring modes
+- no - it means autowiring is not enabled
+- byName - searches for bean name and do autowiring
+- byType
+- constructor
+- _autodetect (deprecated since Spring 3)_
+
+#### ```@Autowired``` is used for autowiring using Annotations
+
