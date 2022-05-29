@@ -19,3 +19,10 @@ We have to give **Beans** and **Config** to the Spring container.
 
 > the class which we provide to IoC containers are called **Beans**. We use xml **configuration file** to give those information of our class.
 - configuration file - where we declare beans and its dependency
+
+### ```Spring LifeCycle methods```
+Spring provides two important methods to every **bean**.
+1. public void init()
+2. public void destroy()
+
+**AbstractApplicationContext** has **registerShutdownHook()** method for destroying application context
