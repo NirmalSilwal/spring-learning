@@ -43,3 +43,16 @@ Spring provides two important methods to every **bean**.
 
 #### ```@Autowired``` is used for autowiring using Annotations
 
+### ```Bean Scope```
+- Singleton - make object once and return it again and again
+- prototype - make new object in each request
+- request
+- session
+- globalsession
+
+> **singleton** is the default scope.
+> &lt;bean class = "..." name = "..." scope = "...">
+> **@Scope("..")** annotation is used to tell the scope, it is always used with **@Component** annotation only
+  
+## SpEL - Spring Expression Language 
+- supports Parsing and executing expression with the help of **@Value** annotations
